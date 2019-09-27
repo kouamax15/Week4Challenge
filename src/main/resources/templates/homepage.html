@@ -2,45 +2,90 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+<!--    bootstrap-->
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--    link to css style page-->
+
     <link rel="stylesheet" href="cssstyles.css">
+<!--    google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+
     <title>Homepage</title>
 
 </head>
 <body>
+
 <!--    NAVBAR STARTS-->
-<nav class="navbar navbar-inverse">
+
+<nav class="navbar navbar-expand-sm bg-light navbar-light">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" href="/">MC Java Blog</a>
+            <a class="navbar-brand" href="/">My MC Java Blog</a>
+    <ul class="navbar-nav">
+        <li class="nav-item active">
+            <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="/">Blog Entries
+                <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="/entry1">Entry 1</a></li>
+                <li><a href="/entry2">Entry 2</a></li>
+                <li><a href="/entry3">Entry 3</a></li>
+            </ul>
+        </li>
+        <li></li>
+        <li class="nav-item">
+            <a class="nav-link" href="/aboutjava">AboutJava</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/authorprofile">Author</a>
+        </li>
+
+    </ul>
         </div>
-        <ul class="nav navbar-nav">
-            <li class="active"><a href="/">Home</a></li>
-            <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Blog Entries
-                    <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                    <li><a href="/entry1">Entry 1</a></li>
-                    <li><a href="/entry2">Entry 2</a></li>
-                    <li><a href="/entry3">Entry 3</a></li>
-                </ul>
-            </li>
-            <li><a href="/aboutjava">About the Java Bootcamp</a></li>
-            <li><a href="/authorprofile">Author Profile</a></li>
-        </ul>
     </div>
 </nav>
 
-<!--    NAVBARENDS-->
-
-<!--HOMEPAGE INFO STARTS-->
-
-<h1><b>My Java Bootcamp Experience</b></h1>
-<h3><b>Entry 1...<a href="/entry1">View More</a></b></h3>
-
-<h3><b>Entry 2...<a href="/entry2">View More</a></b></h3>
-<h3><b>Entry 3...<a href="/entry3">View More</a></b></h3>
+<!--  NAVBAR ends-->
+<!----------------------------------------------------------------------------->
+<!--div starts-->
+<div class="container">
+    <div class="col">
+      </div>
+    <div class="panel panel-info">
+        <div class="row-3 text-center">
+            <div class="panel-heading"><h1><b>Jave Bootcamp at MC</b></h1></div>
+            <div class="panel-body"><h3><b>Entry 1: Dreaming in Code: the Scanner Class<a href="/entry1">View More</a></b></h3></div>
+        <h4><i>9/27/2019</i></h4>
+        </div>
+        <d>
+            <img src="https://res.cloudinary.com/dyy4yedej/image/upload/v1569599455/1523861915_java_story_w4nqnp.jpg">
+        </d>
+    </div>
+    <div class="panel panel-info">
+        <div class="col text-center">
+        <div class="row-3">
+            <h3><b>Entry 2...<a href="/entry2">View More</a></b></h3>
+            <h4><i>TBA</i></h4>
+        </div>
+        </div>
+    </div>
+        <div class="col text-center">
+        </div>
+        <div class="row-6">
+            <h3><b>Entry 3...<a href="/entry3">View More</a></b></h3>
+            <h4><i>TBA</i></h4>
+        </div>
+    </div>
+</div>
+<!--div ends-->
+<!---------------------------------------------------------------------------->
 
 <!--HOMEPAGE INFO END-->
 
@@ -55,3 +100,4 @@
         crossorigin="anonymous"></script>
 </body>
 </html>
+
